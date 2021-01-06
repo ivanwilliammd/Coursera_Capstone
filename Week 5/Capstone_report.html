@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Capstone_report</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>Capstone Project: The Battle of Neighborhoods | Business Proposal for Culinary Business in Tangerang Regency</h1>
+<h2><strong>1. Introduction/Business Understanding</strong></h2>
+<p>As many of the people migrate and looking forward to have better living, many people migrate from rural to urbanized area. As part in exploring better facilities around their neighborhood. It will help people making smart and reasonable decision on selecting best neighborhood out of numbers of other neighborhoods in Tangerang Regency, Banten, Indonesia.</p>
+<p>Canada is one of the most destined migration place which have a good salaries with affordable living costs, and good business oppurtunities. As most of people know, Indonesian culinary is one of the top selling business and attraction when traveller visit Indonesia, and Soekarno Hatta international airport is also located in Tangerang Regency, Banten, Indonesia.</p>
+<p>This Proposal aim to create an analysis of features for a low-middle income population in Tangerang District to choose the best and flourishing culinary business between neighborhoods. The features include the top selling food types and number of population in nearby districts.</p>
+<p>It will help people to get awareness of the area and neighborhood before moving to a new city, state, country or place for their work or to start a new culinary business.</p>
+<h2><strong>2. Problem Identification</strong></h2>
+<p>The major purpose of this project, is to suggest a better neighborhood for the person who are migrating/moving there to start a culinary business. Business flourishing depends on number of audience and food type likeability in particular area.</p>
+<ol>
+<li>Sorted list of 5 topmost culinary in particular districts.</li>
+<li>Sorted list of 3 most recommended culinary food business to start</li>
+</ol>
+<h2><strong>3. The Location</strong></h2>
+<p>https://en.wikipedia.org/wiki/Tangerang_Regency</p>
+<p>Tangerang Regency is a regency of Banten province, Indonesia. It is located on the island of Java. The current regent is Ahmed Zaki Iskandar. Though commonly misunderstood as being a part of Jakarta, Tangerang is actually outside Jakarta City but is part of Greater Jakarta (which is called Jabodetabek, Tangerang being the &quot;ta&quot; of the acronym). Since 1993, the Regency has lost territory as first Tangerang city was split off on 27 February 1993 and subsequently South Tangerang city was split off on 29 October 2008. The residual Regency now has an area of 959.61 km² and an official 2010 census count of 2,838,621;[2] the Intermediate Census of 2015 gave a total population of 3,361,740, and the latest estimate (as of mid 2020) is 3,908,880.[3] Tigaraksa is the administrative capital of the regency.</p>
+<h2><strong>4. Data &amp; Technical Requirements</strong></h2>
+<p>To finish this project, we need following data:
+<strong>4.1 Borough and Neighbourhood information:</strong>
+Data Link: <a href="https://id.wikipedia.org/wiki/Daftar_kecamatan_dan_kelurahan_di_Kabupaten_Tangerang">Wikipedia Link</a></p>
+<p>Dataset consisting of latitude and longitude.</p>
+<p><strong>4.2 Number of population in Tangerang Regency</strong>
+Data Link: <a href="https://tangerangkab.bps.go.id/statictable/download.html?nrbvfeve=NjE%3D&amp;sdfs=ldjfdifsdjkfahi&amp;zxcv=L2JhY2tlbmQ%3D&amp;xzmn=aHR0cHM6Ly90YW5nZXJhbmdrYWIuYnBzLmdvLmlkL3N0YXRpY3RhYmxlLzIwMTgvMDIvMDIvNjEvanVtbGFoLXBlbmR1ZHVrLWJlcmRhc2Fya2FuLWplbmlzLWtlbGFtaW4tbWVudXJ1dC1rZWNhbWF0YW4tZGkta2FidXBhdGVuLXRhbmdlcmFuZy0tMjAxNi5odG1s&amp;twoadfnoarfeauf=MjAyMS0wMS0wNiAxNjo0NTo0MA%3D%3D">BPS Statistical Link</a></p>
+<p>Dataset consists of borough, neighbourhood, male &amp; female population, total population, and male/female ratio.</p>
+<p><strong>4.3 Indonesian GeoJSON data based on postal &amp; area</strong>
+Github link: <a href="https://github.com/ArrayAccess/Indonesia-Postal-And-Area/">Indonesia Postal and Area</a></p>
+<p>Dataset contains of postals, area, neighbourhood information and used in conjuction with data we got from wikipedia</p>
+<p><strong>4.4 Libraries Which are Used to Developing the Project:</strong>
+1. Pandas: Great dataframe manipulation library.
+2. Folium: Python GIS leaflet visualization library.
+3. Scikit Learn (sklearn) : k-means clustering module.
+4. JSON: JSON files handler.
+5. XML: Separate data from presentation and XML stores data in plain text format.
+6. Geocoder: Retrieve Location Data.
+7. Beautiful Soup (BS) and requests: scrap and handle http requests.
+8. Matplotlib: Great data visualization library.</p>
+<h2><strong>5. Methodology</strong></h2>
+<h3><strong>5.1 Data Preparation</strong></h3>
+<h4><strong>5.1.1 Scraping data from wikipedia Tangerang Regency information</strong></h4>
+<p>I first make use of <a href="https://id.wikipedia.org/wiki/Daftar_kecamatan_dan_kelurahan_di_Kabupaten_Tangerang">List of Tangerang Regency District and neighbourhood
+</a> page from Wikipedia to scrap the table to create a data-frame. For this, I've used the beautiful-soup library to get the page's html and then find out the &quot;a&quot; tags contains scenic spot, extract them and store into dataframe. We start as below:</p>
+<p><img src="./report_image/01.PNG" alt="img" /></p>
+<p>As we can see above, we don't have geocode information yet. Thus after downloading and extracting specific data from <a href="https://github.com/ArrayAccess/Indonesia-Postal-And-Area/">Indonesian GeoJSON Dataset</a> After a little work, we get a csv file below for this project.</p>
+<p><img src="./report_image/02.PNG" alt="img" /></p>
+<h3><strong>5.2 Exploratory data analysis</strong></h3>
+<p>First of all, let's plot the Borough &amp; neighbourhood in Tangerang Regency Area.
+<img src="./report_image/03.PNG" alt="img" />
+Note: please clone, fork, and navigate the map if you want to see whole Tangerang Regency</p>
+<p>Fetch all the restaurant from Foursquare API.
+<img src="./report_image/04.PNG" alt="img" /></p>
+<p>This is the dataframe and the grouping of each venue in respective neighbourhood
+<img src="./report_image/05.PNG" alt="img" />
+<img src="./report_image/06.PNG" alt="img" /></p>
+<p>Visualize all the restaurant in each borough.
+<img src="./report_image/07.PNG" alt="img" />
+Note: please clone, fork, and navigate the map if you want to see whole Tangerang Regency</p>
+<p>Get the 5 most 'existing/appearing' restaurant in foursquare database
+<img src="./report_image/08.PNG" alt="img" /></p>
+<h3><strong>5.3 Clustering</strong></h3>
+<p>Do the K-mean clustering and try to find the elbow point
+<img src="./report_image/09.png" alt="img" />
+We could see at k=14 is the elbow point considering both WSS &amp; Squared Error graphs.</p>
+<p>Apply the clustering in the leaflet
+<img src="./report_image/10.PNG" alt="img" />
+Note: please clone, fork, and navigate the map if you want to see whole Tangerang Regency</p>
+<h2><strong>6. Results &amp; Discussion</strong></h2>
+<p>After we cluster it, to find the easy to interpret recommendation for culinary business in each neighbourhood, let's used the <a href="https://trailerpark.weebly.com/uploads/8/8/5/5/8855465/7628808.png?371">Weight Rating formula</a>, considering number of population in each neighbourhood.
+<img src="./report_image/11.PNG" alt="img" /></p>
+<p>As you can see from the above table, majority of top 3 recommended categories are seafood, javanese, sundanese, and chinese food restaurant, considering Banten Province majorly consist of javanese, sundanese, and chinese population.</p>
+<h2><strong>7. Conclusion</strong></h2>
+<p>In nowadays, data is valuable and able to give insightful insights and applicable to daily use case. However, the significancy of the information and interpretation depends on quality of data, method used to interpret, and how to interpret the results.
+In this project, I used the knowledge learning from the IBM Data Science courses which suprisingly I fast-track it on 1 months, and exploring the current situation of the data industry, I have gained many skills and able to review some of the basic I miss when learning from another MOOC class. </p>
+<p>Hope you stay safe and healthy always</p>
+<h4>Tangerang, 06-01-2021</h4>
+<h2>7. References</h2>
+<p>[1]. https://github.com/devildances/RecommenderSystem_Project</p>
+<p>[2]. https://github.com/fsiddh/IBM-Data-Science-Professional-Certification/tree/master/Applied%20Data%20Science%20Capstone</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
