@@ -10,7 +10,7 @@
 <br/>
 
 ### What to prepare:
-1. Foursquare API access
+1. [Foursquare API access](https://foursquare.com/developers/home)
 2. Jupyter notebook / Google Collab
 3. Data Source (in my case, I use BPS data)
 4. Python Library
